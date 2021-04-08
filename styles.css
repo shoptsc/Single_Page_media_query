@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.nav-bar {
+    width: 100%;
+    margin: auto;
+}
+
+div.logo {
+    font-size: 1.5rem;
+    color: #bcc3c7;
+}
+
+
+/* .nav-links {
+    text-align: center;
+    margin: auto;
+} */
+
+.nav-links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    margin: 0 2vw;
+    list-style: none;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #88949B;
+    padding: 0.5vw;
+    text-align: center;
+}
+
+ul li a:hover {
+    color: #304353;
+    background: #fff;
+    padding: 0.5rem;
+}
+
+.section {
+    background: #bcc3c7;
+}
+
+div.hero-section {
+    background: #304353;
+    padding: 1em;
+}
+
+div.hero-content-heading {
+    text-align: center;
+}
+
+div.hero-content-heading h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: #bcc3c7;
+}
+
+div.hero-content-heading p {
+    text-align: center;
+    padding-top: 0.7rem;
+    color: #88949B;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+div.hero-content-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+div.hero-content-btn a {
+    background: #E44C65;
+    text-decoration: none;
+    color: #bcc3c7;
+    font-size: 0.9rem;
+    /* padding: top left bottom right*/
+    /* padding: top/bottom left/right*/
+    padding: 10px 20px;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+
+div.hero-background {
+    background: #f0f0f0;
+    padding: 1rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+div.background {
+    background: #fff;
+    box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+    padding: 15px 40px;
+    /* width: 300px; */
+    height: 220px;
+    position: relative;
+}
+
+div.background h4,
+.snapshot-team h4,
+.gallery-content h4,
+.footer-content h4 {
+    padding: 1rem;
+    color: #555657;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#snapshot {
+    background: white;
+    margin-top: 1em;
+    padding: 15px 40px;
+    height: 220px;
+}
+
+.snapshot-team {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.snapshot-box h5 {
+    color: #555657;
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+
+.gallery-section {
+    width: 90%;
+    margin: auto;
+}
+
+.gallery-content {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.gallery-img .gallery {
+    display: block;
+    text-align: center;
+}
+
+.gallery-img .img img {
+    width: 90%;
+    margin-bottom: 1em;
+}
+
+.footer {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.footer .footer-content {
+    margin: 1em 0 2em;
+}
+
+.footer .footer-input input {
+    width: 100%;
+    display: block;
+    height: 3em;
+    margin: 1em auto;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.footer-textarea textarea {
+    width: 100%;
+    display: block;
+    height: 10em;
+    margin: 1em auto;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.footer-btn {
+    margin: 2em 0;
+}
+
+.footer-btn a {
+    text-decoration: none;
+    color: white;
+    background: #E44C65;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.footer h6 {
+    margin: 2em 0;
+    font-size: 0.8em;
+}
+
+
+/* To set the media query for big screen ... this will work for any screen biggger than 550px */
+
+@media screen and (min-width: 750px) {
+    ul.nav-links {
+        display: flex;
+    }
+    div.hero-section {
+        padding: 5em;
+    }
+    div.hero-content-heading h3 {
+        font-size: 2rem;
+    }
+    div.hero-content-btn a {
+        padding: 20px 30px;
+    }
+    div.hero-background {
+        padding: 3rem;
+        display: flex;
+    }
+    div.background {
+        padding: 15px 40px;
+        width: 550px;
+        /* height: 220px; */
+    }
+    #snapshot {
+        margin-top: 0;
+        margin-left: 1em;
+    }
+    .gallery-img .gallery {
+        display: flex;
+    }
+    .footer-input {
+        display: flex;
+    }
+    .footer .footer-input input {
+        width: 48%;
+        display: flex;
+    }
+}
