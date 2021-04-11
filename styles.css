@@ -15,13 +15,34 @@ div.logo {
 }
 
 
-/* .nav-links {
-    text-align: center;
-    margin: auto;
-} */
+/* The new css starts*/
+
+.menu {
+    background: #E44C65;
+}
+
+.menu i {
+    padding: 10px;
+    color: white;
+}
+
+.menu .burger-list {
+    display: none;
+}
+
+.menu ul li {
+    padding: 1em 0 0.5em;
+}
+
+.menu ul li a {
+    color: white;
+}
+
+
+/* The new css ends */
 
 .nav-links {
-    display: flex;
+    display: none;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -37,7 +58,7 @@ ul li {
 ul li a {
     text-decoration: none;
     color: #88949B;
-    padding: 0.5vw;
+    padding: 2rem;
     text-align: center;
 }
 
@@ -89,8 +110,6 @@ div.hero-content-btn a {
     text-decoration: none;
     color: #bcc3c7;
     font-size: 0.9rem;
-    /* padding: top left bottom right*/
-    /* padding: top/bottom left/right*/
     padding: 10px 20px;
     border-radius: 3px;
     letter-spacing: 2px;
@@ -108,7 +127,6 @@ div.background {
     background: #fff;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
     padding: 15px 40px;
-    /* width: 300px; */
     height: 220px;
     position: relative;
 }
@@ -211,6 +229,11 @@ div.background h4,
 /* To set the media query for big screen ... this will work for any screen biggger than 550px */
 
 @media screen and (min-width: 750px) {
+    /* The new css */
+    .menu {
+        display: none;
+    }
+    /* The new css ends*/
     ul.nav-links {
         display: flex;
     }
